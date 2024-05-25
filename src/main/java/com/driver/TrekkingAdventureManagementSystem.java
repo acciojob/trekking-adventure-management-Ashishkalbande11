@@ -35,8 +35,17 @@ public class TrekkingAdventureManagementSystem {
     }
 
     public static String calculateTrekDifficulty(Trek trek) {
-		
+
+        int trekDifficulty = trek.getDuration() + (trek.getAltitudeGain()/100) + trek.getKnownChallenges().size();
+
+        if(trekDifficulty <= 10){
+            return "Easy";
+        }else if(trekDifficulty <= 20){
+            return "Moderate";
+        }else{
+            return "Difficult";
+        }
     	// your code goes here
-    	return null;
+//    	return null;
     }
 }
