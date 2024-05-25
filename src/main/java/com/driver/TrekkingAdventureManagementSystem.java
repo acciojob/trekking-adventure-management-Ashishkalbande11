@@ -43,7 +43,7 @@ public class TrekkingAdventureManagementSystem {
         }else if(trekDifficulty <= 20){
             return "Moderate";
         }else{
-            return "Difficult";
+            return "Challenging";
         }
     	// your code goes here
 //    	return null;
